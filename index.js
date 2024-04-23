@@ -10,7 +10,7 @@ const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'exercusuarios',
-    password: 'ds564',
+    password: 'liv121006',
     port: 5432,
 });
 
@@ -49,13 +49,21 @@ const signo = (data_aniversario) => {
 const calcularIdade = (data_nascimento) => {
    let dataAtual = new Date()
    let anoAtual =  dataAtual.getFullYear()
+   let mes = dataAtual.getMonth()
     let birthdate = new Date(data_nascimento);
+    let mesBirthdate = birthdate.getMonth()
     let ano = birthdate.getFullYear();
   
-    console.log("Passou pelo getSigno() da class User");
-
-    const idade = anoAtual - ano ;
+    console.log("Passou pelo idade da class User");
+ if(mesBirthdate > mes){
+    const idade = anoAtual - ano  ;
+    return idade - 1;
+ }
+   else{
+    const idade = anoAtual - ano
     return idade;
+   }
+   
 };
 
 app.use(express.json());
@@ -127,8 +135,11 @@ app.delete('/usuarios/:id', async (req, res) => {
 app.put('/usuarios/:id', async (req, res) => {
     try {
         const { id } = req.params;
-        const { nome, email } = req.body;
-        await pool.query('UPDATE usuarios SET nome = $1, email = $2 WHERE id = $3', [nome, email, id]);
+        const { nome, sobrenome, data_nascimento, email } = req.body;
+        const idade = calcularIdade(new Date(data_nascimento));
+        const signoUsuario = signo(new Date(data_nascimento));
+        await pool.query('UPDATE usuarios SET nome = $1, sobrenome = $2, email = $3, data_nascimento = $4, idade = $5, signo = $6 WHERE id = $7', [nome, sobrenome, email, data_nascimento, idade, signoUsuario, id]);
+
         res.status(200).send({ mensagem: 'usuário atualizado' });
     } catch (error) {
         console.error('erro ao atualizar usuário', error);
