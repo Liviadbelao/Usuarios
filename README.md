@@ -15,7 +15,7 @@ Certifique-se de ter os seguintes softwares instalados em seu sistema:
 1. Clone este repositório em sua máquina local:
 
    ```bash
-   git clone 
+   git clone https://github.com/Liviadbelao/Usuarios.git
 ## Inicie no terminal do VScode:
 
 npm install
