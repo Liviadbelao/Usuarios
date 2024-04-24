@@ -8,7 +8,7 @@ Certifique-se de ter os seguintes softwares instalados em seu sistema:
 
 - Node.js
 - PostgreSQL
-- Um cliente PostgreSQL (como pgAdmin) para gerenciar o banco de dados (opcional)
+
 
 ## Instalação
 
