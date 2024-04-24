@@ -1,19 +1,40 @@
-<h1 aling='center'>Atividade Signo e Idade</h1>
-<h2>Comandos iniciais:</h2>
-<p>npm i</p>
-<h2>Comando para executar:</h2>
-<p>Devemos mudar a pagina package.json em 'scripts:' adicionando a linha "dev": "nodemon index.js".</p>
-<div >
- <h2>Terceiro passo:</h2>
-<p>Criamos um banco de dados, no Postgresql com o nome exercusuarios (nome da database), e uma tabela de usuarios da seguinte forma. </p>
-<p>CREATE TABLE usuarios ( </p>
-<p> id SERIAL PRIMARY KEY,</p>
-<p> nome VARCHAR(100) NOT NULL,</p>
-<p> sobrenome VARCHAR(100) NOT NULL,</p>
-<p> data_nascimento DATE NOT NULL,</p>
-<p> email VARCHAR(100) NOT NULL,</p>
-<p> idade INT,</p>
- <p></p>signo VARCHAR(100)</p>
- <p>); </p>
- </div>
- <p>E criamos duas funções que pegam o valor da data_nascimento e calculam a idade e o signo da pessoa.</p>
+# CRUD de Usuários com Express e PostgreSQL
+
+Este é um projeto simples que implementa um CRUD (Create, Read, Update, Delete) de usuários utilizando o Node.js com o framework Express e PostgreSQL como banco de dados.
+
+## Pré-requisitos
+
+Certifique-se de ter os seguintes softwares instalados em seu sistema:
+
+- Node.js
+- PostgreSQL
+- Um cliente PostgreSQL (como pgAdmin) para gerenciar o banco de dados (opcional)
+
+## Instalação
+
+1. Clone este repositório em sua máquina local:
+
+   ```bash
+   git clone 
+   ## Configuração do Banco de Dados
+   npm install
+
+## Configuração Banco de Dados
+
+Certifique-se de ter o PostgreSQL instalado e em execução em sua máquina.
+Crie um banco de dados chamado `exercusuarios`.
+Execute o script `database.sql` fornecido na pasta `sql` para criar a tabela de usuários.
+
+## Configuração do Projeto
+
+1. Abra o arquivo `index.js`.
+2. Altere as configurações de conexão do banco de dados (`user`, `host`, `password`, `port`, etc.) conforme necessário para corresponder à sua configuração local.
+
+## package.json
+
+   
+1. Abrir o arquivo package.json e dentro de 'scripts:' adicionar a linha  "dev": "nodemon index.js".
+
+## Comando de execução
+
+1. npm run dev
