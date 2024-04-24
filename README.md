@@ -4,8 +4,10 @@
 <p>npm install -g nodemon</p>
 <p>npm install express</p>
 <p>npm run dev</p>
+<h2>Segundo Passo:</h2>
 <p>Devemos mudar a pagina package.json em 'scripts:' adicionando a linha "dev": "nodemon index.js".</p>
 <div >
+ <h2>Terceiro passo:</h2>
 <p>Criamos um banco de dados, no Postgresql com o nome exercusuarios (nome da database), e uma tabela de usuarios da seguinte forma. </p>
 <p>CREATE TABLE usuarios ( </p>
 <p> id SERIAL PRIMARY KEY,</p>
