@@ -23,8 +23,8 @@ npm install
 ## Configurações Banco de dados
 
 Certifique-se de ter o PostgreSQL instalado e em execução em sua máquina.
-Crie um banco de dados chamado `exercusuarios`.
-Execute o script `database.sql` fornecido na pasta `sql` para criar a tabela de usuários.
+Crie um banco de dados chamado `exercusuarios` (nome da database).
+Execute o script `scripts.sql` fornecido na pasta `sql` (no VScode) crie a tabela usuarios em seu banco (código já fornecido no scripts.sql).
 
 ## Configuração do Projeto
 
