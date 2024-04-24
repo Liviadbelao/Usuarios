@@ -16,7 +16,7 @@ Certifique-se de ter os seguintes softwares instalados em seu sistema:
 
    ```bash
    git clone 
-   ## Configuração do Banco de Dados
+
    npm install
 
 ## Configuração Banco de Dados
