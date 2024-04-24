@@ -7,13 +7,13 @@
 <p>Devemos mudar a pagina package.json em 'scripts:' adicionando a linha "dev": "nodemon index.js".</p>
 
 <p>Criamos um banco de dados, no Postgresql com o nome exercusuarios (nome da database), e uma tabela de usuarios da seguinte forma. </p>
-<p>CREATE TABLE usuarios (
- id SERIAL PRIMARY KEY,
- nome VARCHAR(100) NOT NULL,
- sobrenome VARCHAR(100) NOT NULL,
- data_nascimento DATE NOT NULL,
- email VARCHAR(100) NOT NULL,
- idade INT,
- signo VARCHAR(100)
- ); </p>
+<p>CREATE TABLE usuarios ( </p>
+<p> id SERIAL PRIMARY KEY,</p>
+<p> nome VARCHAR(100) NOT NULL,</p>
+<p> sobrenome VARCHAR(100) NOT NULL,</p>
+<p> data_nascimento DATE NOT NULL,</p>
+<p> email VARCHAR(100) NOT NULL,</p>
+<p> idade INT,</p>
+ <p></p>signo VARCHAR(100)</p>
+ <p>); </p>
  <p>E criamos duas funções que pegam o valor da data_nascimento e calculam a idade e o signo da pessoa.</p>
