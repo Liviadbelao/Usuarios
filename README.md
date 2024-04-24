@@ -17,10 +17,10 @@ Certifique-se de ter os seguintes softwares instalados em seu sistema:
    ```bash
    git clone 
 ## Inicie no terminal do VScode:
-```bash
-   npm install
 
-## Configuração Banco de Dados
+  ``bash npm install
+
+## Configurações Banco de dados
 
 Certifique-se de ter o PostgreSQL instalado e em execução em sua máquina.
 Crie um banco de dados chamado `exercusuarios`.
