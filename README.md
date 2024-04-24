@@ -5,7 +5,7 @@
 <p>npm install express</p>
 <p>npm run dev</p>
 <p>Devemos mudar a pagina package.json em 'scripts:' adicionando a linha "dev": "nodemon index.js".</p>
-<div color:'pink'>
+<div backgroundColor='pink'>
 <p>Criamos um banco de dados, no Postgresql com o nome exercusuarios (nome da database), e uma tabela de usuarios da seguinte forma. </p>
 <p>CREATE TABLE usuarios ( </p>
 <p> id SERIAL PRIMARY KEY,</p>
