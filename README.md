@@ -1,4 +1,4 @@
-# CRUD de Usuários com Express e PostgreSQL
+# CRUD de Usuários (atividade signo e idade)
 
 Este é um projeto simples que implementa um CRUD (Create, Read, Update, Delete) de usuários utilizando o Node.js com o framework Express e PostgreSQL como banco de dados.
 
