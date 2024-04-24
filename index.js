@@ -10,8 +10,8 @@ const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'exercusuarios',
-    password: 'liv121006',
-    port: 5432,
+    password: 'ds564',
+    port: 7007,
 });
 
 const signo = (data_aniversario) => {
@@ -50,10 +50,11 @@ const calcularIdade = (data_nascimento) => {
    let dataAtual = new Date()
    let anoAtual =  dataAtual.getFullYear()
    let mes = dataAtual.getMonth()
+ 
     let birthdate = new Date(data_nascimento);
     let mesBirthdate = birthdate.getMonth()
     let ano = birthdate.getFullYear();
-  
+ 
     console.log("Passou pelo idade da class User");
  if(mesBirthdate > mes){
     const idade = anoAtual - ano  ;
