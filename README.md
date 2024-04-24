@@ -1,10 +1,7 @@
 <h1 aling='center'>Atividade Signo e Idade</h1>
-<h2>Comandos:</h2>
-<p>npm init -y</p>
-<p>npm install -g nodemon</p>
-<p>npm install express</p>
-<p>npm run dev</p>
-<h2>Segundo Passo:</h2>
+<h2>Comandos iniciais:</h2>
+<p>npm i</p>
+<h2>Comando para executar:</h2>
 <p>Devemos mudar a pagina package.json em 'scripts:' adicionando a linha "dev": "nodemon index.js".</p>
 <div >
  <h2>Terceiro passo:</h2>
