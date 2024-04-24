@@ -18,7 +18,7 @@ Certifique-se de ter os seguintes softwares instalados em seu sistema:
    git clone 
 ## Inicie no terminal do VScode:
 
-  ``bash npm install
+npm install
 
 ## Configurações Banco de dados
 
